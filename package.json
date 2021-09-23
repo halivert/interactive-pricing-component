@@ -1,0 +1,17 @@
+{
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "serve": "vite preview"
+  },
+  "dependencies": {
+    "petite-vue": "^0.3.0",
+    "typescript": "^4.3.2",
+    "vite": "^2.5.10"
+  },
+  "devDependencies": {
+    "autoprefixer": "^10.3.5",
+    "sass": "^1.42.1"
+  }
+}
