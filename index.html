@@ -8,12 +8,17 @@
   <body>
     <div id="app">
       <main>
+        <img src="./images/pattern-circles.svg" class="pattern-circles" />
         <h1>Simple, traffic-based pricing</h1>
         <h2>
           Sign-up for our 30-day trial. No credit card required.
         </h2>
         <article v-scope>
-          <strong>{{ selectedPrice.views }} Pageviews</strong>
+          <p>
+            <strong class="uppercase"
+              >{{ selectedPrice.views }} Pageviews</strong
+            >
+          </p>
           <input type="range" min="0" max="4" v-model="price" />
           <p><strong>$ {{ finalPrice }}</strong> /month</p>
 

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@600;800&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
@@ -8,3 +10,85 @@ body {
 	box-sizing: border-box;
 }
 
+$colors: (
+	/* (Full Slider Bar) */ "soft-cyan": hsl(174, 77%, 80%),
+	/* (Slider Backround) */ "strong-cyan": hsl(174, 86%, 45%),
+	/* (Discount Background) */ "light-grayish-red": hsl(14, 92%, 95%),
+	/* (Discount Text) */ "light-red": hsl(15, 100%, 70%),
+	/* (CTA Text) */ "pale-blue": hsl(226, 100%, 87%),
+	/* (Pricing Component Background) */ "white": hsl(0, 0%, 100%),
+	/* (Main Background) */ "very-pale-blue": hsl(230, 100%, 99%),
+	/* (Toggle Background) */ "light-grayish-blue": hsl(223, 50%, 87%),
+	/* (Empty Slider Bar) */ "lighter-grayish-blue": hsl(224, 65%, 95%),
+	/* (Text) */ "grayish-blue": hsl(225, 20%, 60%),
+	/* (Text & CTA Background) */ "dark-desaturated-blue": hsl(227, 35%, 25%)
+);
+
+:root {
+	@each $name, $hsl in $colors {
+		--#{$name}: #{$hsl};
+	}
+
+	--font-size: 15px;
+	--font-family: Manrope;
+}
+
+body {
+	font-weight: 600;
+	font-size: var(--font-size);
+	font-family: var(--font-family);
+	color: var(--grayish-blue);
+	height: 100vh;
+	width: 100vw;
+	line-height: 1.5;
+}
+
+#app {
+	height: 100%;
+	width: 100%;
+	background-image: url(../images/bg-pattern.svg);
+	background-size: 100% 50%;
+	background-repeat: no-repeat;
+}
+
+main {
+	--padding-top: 3rem;
+	position: relative;
+	text-align: center;
+	padding: var(--padding-top) 1.5em;
+	isolation: isolate;
+}
+
+.pattern-circles {
+	position: absolute;
+	top: var(--padding-top);
+	left: 50%;
+	transform: translateX(-50%);
+	z-index: -1;
+}
+
+h1 {
+	color: var(--dark-desaturated-blue);
+	font-size: 1.25em;
+	margin-top: 1.75rem;
+}
+
+h2 {
+	font-size: 0.825em;
+	padding: 0 5.5em;
+	margin-top: 1em;
+	line-height: 1.75;
+}
+
+article {
+	margin-top: 4.5em;
+	background-color: var(--white);
+	border-radius: 8px;
+	padding: 2em 1em;
+}
+
+.uppercase {
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-size: 0.8em;
+}
