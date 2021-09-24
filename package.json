@@ -11,6 +11,7 @@
     "vite": "^2.5.10"
   },
   "devDependencies": {
+    "@vue/reactivity": "^3.2.16",
     "autoprefixer": "^10.3.5",
     "sass": "^1.42.1"
   }

@@ -12,13 +12,17 @@
         <h2>
           Sign-up for our 30-day trial. No credit card required.
         </h2>
-        <article class="box">
-          <strong class="uppercase">Pageviews</strong>
-          <input type="range" />
-          <p><strong>$</strong> /month</p>
+        <article v-scope>
+          <strong>{{ selectedPrice.views }} Pageviews</strong>
+          <input type="range" min="0" max="4" v-model="price" />
+          <p><strong>$ {{ finalPrice }}</strong> /month</p>
 
-          <small>Monthly Billing</small> <small>Yearly Billing</small>
-          <small class="discount">25% <span>discount</span></small>
+          <small>Monthly Billing</small>
+          <input type="checkbox" name="yearly" v-model="yearly" />
+          <small>Yearly Billing</small>
+
+          <small>25% <span>discount</span></small>
+
           <ul>
             <li>Unlimited websites</li>
             <li>100% data ownership</li>
@@ -31,7 +35,7 @@
       </main>
 
       <footer>
-        <p class="attribution">
+        <p>
           Challenge by
           <a
             rel="noopener noreferrer"

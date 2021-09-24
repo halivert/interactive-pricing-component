@@ -2,6 +2,18 @@
 # yarn lockfile v1
 
 
+"@vue/reactivity@^3.2.16":
+  version "3.2.16"
+  resolved "https://registry.yarnpkg.com/@vue/reactivity/-/reactivity-3.2.16.tgz#0d4253443d580c906508b0b05b2cd136d46bf4a2"
+  integrity sha512-eOOpjakbRFg2roaGhVsGgBFnQWaXJcTw66wfc+ZMWl/cihAcgn792gFO1a6KeT68vQBp4JVpGZ5jkkdgZnwFfA==
+  dependencies:
+    "@vue/shared" "3.2.16"
+
+"@vue/shared@3.2.16":
+  version "3.2.16"
+  resolved "https://registry.yarnpkg.com/@vue/shared/-/shared-3.2.16.tgz#a7f5e37e07ac68d4b7ea8ebeba515b46d205c524"
+  integrity sha512-zpv8lxuatl3ruCJCsGzrO/F4+IlLug4jbu3vaIi/wJVZKQgnsW1R/xSRJMQS6K57cl4fT/2zkrYsWh1/6H7Esw==
+
 anymatch@~3.1.2:
   version "3.1.2"
   resolved "https://registry.yarnpkg.com/anymatch/-/anymatch-3.1.2.tgz#c0557c096af32f106198f4f4e2a383537e378716"
